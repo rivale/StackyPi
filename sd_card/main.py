@@ -19,7 +19,7 @@ import os
 import utime
 
 spi = SPI(0, baudrate=40000000, sck=Pin(2), mosi=Pin(3))
-tft = gc9a01.GC9A01(spi,240,240,reset=Pin(8, Pin.OUT),cs=Pin(5, Pin.OUT),dc=Pin(22, Pin.OUT),backlight=Pin(26, Pin.OUT),rotation=1)
+tft = gc9a01.GC9A01(spi,240,240,reset=Pin(8, Pin.OUT),cs=Pin(5, Pin.OUT),dc=Pin(22, Pin.OUT),backlight=Pin(26, Pin.OUT),rotation=5)
 tft.init()
 tft.fill(gc9a01.BLACK)
 utime.sleep(0.5)
